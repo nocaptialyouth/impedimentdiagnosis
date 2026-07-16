@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#4f5fe7">
+  <title>장애진단 관련서류 길잡이 — 질환별 맞춤 서류 및 정부 지원 복지 혜택 안내</title>
+  <meta name="description" content="뇌출혈, 고관절 골절, 척수손상 등 질환별 장애인 등록 서류 및 본인부담상한제, 재난적의료비, 노인장기요양보험 신청 가이드를 제공합니다.">
+  <meta name="keywords" content="장애인등록서류, 장애인등급, 장애연금, 본인부담상한제, 재난적의료비지원, 노인장기요양보험, 고관절 골절 장애, 파킨슨병 장애">
+  <meta property="og:title" content="장애진단 관련서류 길잡이 — 질환별 서류 및 복지 안내">
+  <meta property="og:description" content="보호자를 위한 질환별 장애진단 서류 준비 요령과 퇴원 후 의료비 혜택 정보를 친절하게 안내합니다.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="#" onclick="window.scrollToTop(event)" class="brand"><i>+</i> 장애진단 관련서류 길잡이</a>
+    <nav class="header-nav">
+      <a href="#guide-column" onclick="window.scrollToSection(event, '#guide-column')">3대 핵심 원칙</a>
+      <a href="#welfare-guide" onclick="window.scrollToSection(event, '#welfare-guide')">놓치기 쉬운 핵심지원제도</a>
+      <a href="#agencies" onclick="window.scrollToSection(event, '#agencies')">4대 유관기관 역할 안내</a>
+    </nav>
+    <button type="button" class="contact-btn" onclick="window.openContactModal()">문의하기</button>
+  </header>
+  <main>
+    <section class="hero"><span>기능 중심의 장애서류 안내</span><h1>병명보다 기능상태로<br>확인하는 장애서류 안내</h1><p>제출 목적과 질환을 선택하면 필요한 진단서·소견서·검사자료를 안내합니다.</p></section>
+    
+    <section class="panel">
+      <div class="step"><b>1</b><div><small>목적 선택</small><h2>어디에 제출하나요?</h2></div></div>
+      <div id="purposes" class="purpose-grid"></div>
+      <div class="step"><b>2</b><div><small>질환 찾기</small><h2>진단명이나 손상명을 검색하세요</h2></div></div>
+      <label for="search">질환명·손상명</label><input id="search" placeholder="예: 고관절 골절, 뇌출혈, 척수손상">
+      <div id="chips" class="chips"></div><div id="conditions" class="condition-grid"></div>
+      <section id="result" class="result" hidden></section>
+    </section>
+
+    <!-- 애드센스 고품질 텍스트 기준 충족을 위한 정보형 칼럼 섹션 -->
+    <section id="guide-column" class="guide-column">
+      <h2>💡 장애서류 준비 전 필독! 전문의가 전하는 3대 핵심 원칙</h2>
+      <p class="section-desc">장애인 등록과 심사 승인율을 높이기 위해 보호자가 반드시 숙지해야 할 의학적·행정적 핵심 가이드라인입니다.</p>
+      <div class="column-grid">
+        <article class="column-card">
+          <h4>1. 단순 '질병명'이 아닌 '기능 상태'의 증명이 본질입니다</h4>
+          <p>많은 보호자분들께서 "뇌출혈 수술을 받았는데 당연히 장애인 등록이 되는 것 아닌가요?"라고 문의하십니다. 그러나 국가 장애 심사는 수술 이력이나 병명만으로 승인되지 않습니다. 약물이나 재활 치료를 충분히 받았음에도 불구하고, 신체 또는 정신적으로 <strong>일상생활에 얼마나 중대한 기능 장애(마비, 가동성 제한 등)가 남았는가</strong>를 입증하는 서류가 가장 중요합니다.</p>
+        </article>
+        <article class="column-card">
+          <h4>2. 객관적으로 검증된 계측 자료가 누락되면 탈락됩니다</h4>
+          <p>국민연금공단의 심사위원들은 환자를 대면하지 않고 오직 제출된 의료 기록지 사본만을 보고 서류 심사를 진행합니다. 따라서 주치의의 주관적인 호전 불가능 소견뿐 아니라, 이를 객관적으로 증명할 수 있는 <strong>정밀 근력 검사(MMT), 관절 가동 범위(ROM) 계측 각도 수치, 수정바델지수(MBI) 일상생활 평점지</strong> 등의 전문 계측 결과지가 반드시 함께 첨부되어야 합니다.</p>
+        </article>
+        <article class="column-card">
+          <h4>3. 법령이 정한 최소 치료 유예 기간을 준수해야 합니다</h4>
+          <p>장애진단은 질환이나 부상이 발생한 직후에는 원칙적으로 발급받을 수 없습니다. 인공고관절 수술, 뇌졸중, 척추유합수술 등 대다수 기능 장애는 <strong>부상 또는 수술일로부터 최소 6개월 이상</strong> 성실히 재활 치료를 받았음에도 영구적인 고착 상태일 때 비로소 진단 자격이 주어집니다. (※ 예외적으로 신체 일부 절단 등은 대기 기간 없이 즉시 진단 가능)</p>
+        </article>
+      </div>
+    </section>
+    
+    <section id="welfare-guide" class="welfare-guide">
+      <h2>놓치기 쉬운 퇴원 후 핵심 지원 제도</h2>
+      <p class="section-desc">치료비 부담을 덜고 일상 복귀를 돕는 핵심 복지 제도의 요약 정보입니다. (클릭 시 상세 신청 가이드 팝업)</p>
+      <div class="welfare-grid">
+        <article class="welfare-card" data-welfare="ceiling">
+          <div class="badge orange">의료비 환급</div>
+          <h3>본인부담상한제</h3>
+          <p>1년간 환자가 병원비로 지불한 건강보험 본인부담금 총액이 개인별 소득 분위 상한액을 초과할 경우, 초과액을 국민건강보험공단에서 사후 환급해주는 제도입니다. (※ 비급여, 선별급여 등 제외)</p>
+          <div class="meta"><b>자세히 보기 & 신청 가이드 ➔</b></div>
+        </article>
+        <article class="welfare-card" data-welfare="disaster">
+          <div class="badge blue">의료비 지원</div>
+          <h3>재난적의료비 지원</h3>
+          <p>소득 대비 과도한 의료비(연소득의 10% 초과) 발생 시, 감당하기 어려운 가계를 위해 비급여를 포함한 의료비 총액 of 50~80%를 연간 최대 5,000만 원 한도 내에서 건강보험공단이 지원합니다.</p>
+          <div class="meta"><b>자세히 보기 & 신청 가이드 ➔</b></div>
+        </article>
+        <article class="welfare-card" data-welfare="longterm">
+          <div class="badge green">간병/장기요양</div>
+          <h3>노인장기요양보험</h3>
+          <p>65세 이상 고령자 또는 65세 미만 노인성 질환(파킨슨병, 뇌혈관질환, 치매 등) 환자 중, 6개월 이상 혼자서 일상생활이 어려운 분에게 간병비 지원, 가사 지원 및 요양시설 급여를 지원합니다.</p>
+          <div class="meta"><b>자세히 보기 & 신청 가이드 ➔</b></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="agencies" class="agencies">
+      <h2>4대 유관기관 역할 안내</h2>
+      <p class="section-desc">장애 심사 및 의료비 지원 제도를 주관하는 기관별 핵심 업무를 구분하여 안내합니다. (클릭 시 공식 홈페이지로 이동)</p>
+      <div class="agency-grid">
+        <a href="https://www.mohw.go.kr" target="_blank" class="agency-card">
+          <div class="icon-wrap">🏢</div>
+          <b>보건복지부</b>
+          <p>장애인 복지 정책 수립 및 장애정도 기준 제정. 근로능력 평가 기준 및 회복기 재활의료기관 지정 등 상위 법령/제도의 기획과 수립 총괄.</p>
+          <span class="go-link">공식 사이트 바로가기 ↗</span>
+        </a>
+        <a href="https://www.nps.or.kr" target="_blank" class="agency-card">
+          <div class="icon-wrap">🔍</div>
+          <b>국민연금공단</b>
+          <p>장애인등록 의학적 판정(위탁 심사) 및 이의신청 심사. 국민연금 가입자를 위한 장애연금 심사 및 근로능력평가 현장조사/평가 수행.</p>
+          <span class="go-link">공식 사이트 바로가기 ↗</span>
+        </a>
+        <a href="https://www.nhis.or.kr" target="_blank" class="agency-card">
+          <div class="icon-wrap">💳</div>
+          <b>국민건강보험공단</b>
+          <p>의료비 경감을 위한 본인부담상한제 사후 환급 및 재난적의료비 지원 신청 접수·지급. 일상생활 곤란 노인을 위한 노인장기요양보험 인정 조사 및 등급 판정.</p>
+          <span class="go-link">공식 사이트 바로가기 ↗</span>
+        </a>
+        <a href="https://www.hira.or.kr" target="_blank" class="agency-card">
+          <div class="icon-wrap">🏥</div>
+          <b>건강보험심사평가원 (심평원)</b>
+          <p>회복기 재활의료기관 등 전국 지정 병원의 적정성 평가 및 안내. 요양급여(치료비/약제비) 기준 심사 및 비급여 진료비 정보 제공.</p>
+          <span class="go-link">공식 사이트 바로가기 ↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 복지제도 상세 신청안내 모달 팝업 -->
+    <div id="welfare-modal" class="modal-overlay">
+      <div class="modal-content">
+        <button id="modal-close" class="modal-close-btn">&times;</button>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <!-- 구글 애드센스 승인 필수 요소: 개인정보처리방침 & 이용약관 모달 -->
+    <div id="legal-modal" class="modal-overlay" style="display: none;">
+      <div class="modal-content">
+        <button type="button" class="modal-close-btn" onclick="window.closeLegalModal()">&times;</button>
+        <div id="legal-modal-body"></div>
+      </div>
+    </div>
+
+    <!-- 온라인 문의하기 모달 팝업 -->
+    <div id="contact-modal" class="modal-overlay" style="display: none;">
+      <div class="modal-content">
+        <button type="button" class="modal-close-btn" onclick="window.closeContactModal()">&times;</button>
+        <div class="modal-header">
+          <span class="badge blue">온라인 문의 접수</span>
+          <h2>문의하기</h2>
+          <p class="modal-sub" style="font-size: 13.5px; color: var(--muted); margin-top: 4px;">기타 문의사항 관리자 메일(rkstmtk@gmail.com)로 전달됩니다.</p>
+        </div>
+        <form id="contact-form" onsubmit="window.submitContactForm(event)" class="contact-form">
+          <div class="form-group">
+            <label for="contact-name">이름 <span class="required">*</span></label>
+            <input type="text" id="contact-name" required placeholder="성함을 입력하세요">
+          </div>
+          
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="contact-phone">연락처 <span class="required">*</span></label>
+              <input type="tel" id="contact-phone" required placeholder="예: 010-1234-5678">
+            </div>
+            <div class="form-group">
+              <label for="contact-email">이메일 <span class="required">*</span></label>
+              <input type="email" id="contact-email" required placeholder="예: user@example.com">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-message">문의 내용 <span class="required">*</span></label>
+            <textarea id="contact-message" required placeholder="상세한 문의 사항을 입력하세요." rows="4"></textarea>
+          </div>
+          
+          <div class="form-agree">
+            <label style="display: flex; gap: 8px; align-items: flex-start; cursor: pointer;">
+              <input type="checkbox" id="contact-agree" required style="width: auto; height: auto; margin-top: 5px;"> 
+              <span style="font-size: 13px; color: #475569; line-height: 1.4;">개인정보 수집 및 이용 동의 (접수 처리 목적 외 다른 용도로 활용되거나 수집되지 않습니다.) <span class="required" style="color: var(--red);">*</span></span>
+            </label>
+          </div>
+          
+          <div class="modal-action-row">
+            <button type="button" class="modal-btn secondary-btn" onclick="window.closeContactModal()">취소</button>
+            <button type="submit" class="modal-btn primary-btn">문의 전송하기</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <section class="notice"><b>주의</b> 본 서비스에서 제공하는 정보는 참고 목적의 정보형 안내이며 실제 공단의 심사나 전문의의 진료 결과를 대신할 수 없습니다.</section>
+  </main>
+  <footer>
+    <div class="footer-links">
+      <a href="javascript:void(0)" onclick="window.openLegalModal('terms')">이용약관</a> | 
+      <a href="javascript:void(0)" onclick="window.openLegalModal('privacy')">개인정보처리방침</a>
+    </div>
+    <p class="copyright">© 장애진단 관련서류 길잡이. All rights reserved.</p>
+  </footer>
+  <script src="data.js"></script><script src="app.js"></script>
+</body>
+</html>
