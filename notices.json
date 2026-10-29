@@ -1,0 +1,86 @@
+{
+  "lastCheckedDate": "2026-10-29",
+  "status": "정상 동기화 완료",
+  "notices": [
+    {
+      "id": "nps-reg-2026",
+      "agency": "국민연금공단",
+      "badgeClass": "blue",
+      "category": "장애정도심사 구비서류",
+      "title": "[공식기준] 장애인등록 장애정도심사 장애유형별 구비서류 및 진단시기 안내",
+      "summary": "장애인복지법 기준 장애정도 심사용 진단서 발급 시 장애유형별(뇌병변, 지체, 시각, 청각 등) 필수 소견서, K-MBI·MMT·ROM 등 검사결과지 및 진료기록 제출 기간 기준 안내입니다. (일괄 6개월 고정 기준 아님)",
+      "attachments": [
+        { "name": "장애정도심사 구비서류 안내 원문 (국민연금공단)", "url": "https://www.nps.or.kr/das/databbs/getOHAO0026M0.do" },
+        { "name": "장애정도심사 포털 메인 안내", "url": "https://www.nps.or.kr/das/main.do" }
+      ],
+      "tag": "필독 고시",
+      "isPinned": true
+    },
+    {
+      "id": "mohw-work-2026",
+      "agency": "보건복지부 · 국민연금공단",
+      "badgeClass": "orange",
+      "category": "법정 서식 · 테이핑 규정",
+      "title": "[서식규정] 근로능력평가용 진단서 법정 투명테이프 부착 및 최근 2개월 진료기록 기준",
+      "summary": "기초생활보장 근로능력평가용 진단서 발급 시 '진단대상자란'과 '근로능력 평가내용란'에 투명테이프 부착이 법정 서식상 의무화되어 있으며(불가피 시 봉투 봉합부 의료기관 간인), 기본 의무기록은 최근 2개월 진료기록지를 첨부합니다.",
+      "attachments": [
+        { "name": "국민연금공단 근로능력평가 공식 안내", "url": "https://www.nps.or.kr/das/main.do" },
+        { "name": "국가법령정보센터 근로능력평가의 기준 등에 관한 고시", "url": "https://www.law.go.kr" }
+      ],
+      "tag": "법정 테이핑 필수",
+      "isPinned": true
+    },
+    {
+      "id": "nps-pension-2026",
+      "agency": "국민연금공단",
+      "badgeClass": "blue",
+      "category": "국민연금 장애연금",
+      "title": "[심사안내] 국민연금 장애심사용 진단서 및 장애결정기준일 의무기록 제출 기준",
+      "summary": "국민연금법 기준 장애연금(1~4급) 청구 시에는 장애인등록용 진단서가 아닌 '국민연금 장애심사용 진단서'와 장애분류별 소견서를 제출해야 하며, 초진시점·장애결정기준일·청구시점의 관련 진료기록을 확인해야 합니다.",
+      "attachments": [
+        { "name": "국민연금 장애연금 심사 공식 안내 및 서식", "url": "https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0065M0.do" }
+      ],
+      "tag": "서식 구분 주의",
+      "isPinned": true
+    },
+    {
+      "id": "nhis-assistive-2026",
+      "agency": "국민건강보험공단",
+      "badgeClass": "green",
+      "category": "보조기기 급여심사",
+      "title": "[급여기준] 장애인보조기기(전동·수동휠체어 등) 처방전 및 사전승인 필수 검사자료 안내",
+      "summary": "국민건강보험법 기준 장애인보조기기 급여 신청 시 품목별 보조기기 처방전과 기능검사 결과지가 필요합니다. 전동휠체어·전동스쿠터·자세보조용구 등 일부 품목은 건보공단 사전승인 신청이 필수입니다.",
+      "attachments": [
+        { "name": "건보공단 장애인보조기기 급여 절차 및 서식 안내", "url": "https://www.nhis.or.kr/static/html/wbma/c/wbmac0206_2.html" }
+      ],
+      "tag": "처방·사전승인",
+      "isPinned": false
+    },
+    {
+      "id": "nhis-longterm-2026",
+      "agency": "국민건강보험공단",
+      "badgeClass": "green",
+      "category": "노인장기요양보험",
+      "title": "[제도구분] 노인장기요양 의사소견서 발급 및 인정조사 등급판정 안내",
+      "summary": "노인장기요양 등급판정은 장애인등록 심사와 별개의 제도입니다. 의료기관에서는 '장기요양 의사소견서'를 발급하며, 일반적으로 6개월분 의무기록 일괄 제출이나 투명테이프 부착 규정이 적용되지 않습니다.",
+      "attachments": [
+        { "name": "노인장기요양보험 인정신청 및 의사소견서 공식 안내", "url": "https://www.nhis.or.kr/static/html/wbda/c/wbdac02.html" }
+      ],
+      "tag": "제도 구분",
+      "isPinned": false
+    },
+    {
+      "id": "comwel-sanjae-2026",
+      "agency": "근로복지공단",
+      "badgeClass": "purple",
+      "category": "산재 장해급여",
+      "title": "[실무주의] 산재 장해진단서 발급 의료기관 요건 및 일반 후유장해진단서 구분 안내",
+      "summary": "업무상 사고·질병 요양 종결 후 산재 장해급여 청구 시 원칙적으로 요양 종결 당시의 산재보험 의료기관에서 '산재 장해진단서'를 발급받아야 하며, 민간보험용 일반 후유장해진단서와 구분하여 발급합니다.",
+      "attachments": [
+        { "name": "근로복지공단 산재보상 서비스 공식 포털", "url": "https://www.comwel.or.kr/" }
+      ],
+      "tag": "산재 전용서식",
+      "isPinned": false
+    }
+  ]
+}
